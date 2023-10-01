@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200;300;400;500;600&display=swap');
+*{
+    font-family: 'Martian Mono', monospace;
+}
+a{
+    text-decoration: none;
+}
+.gradient {
+    background: linear-gradient(to bottom, #00FFFF, #0077B3);
+  }
+  .Products .Product .Product-img i{
+    position: absolute;
+    top:5%;
+    right: 5%;
+    font-size: 25px;
+    opacity: 0;
+    visibility: hidden ;
+    transition: opacity .5s;
+    
+}
+.Products .Product .Product-img:hover i{
+    
+    opacity: 1;
+    visibility: visible;
+
+}
+.Products .Product .Product-img{
+    object-fit: cover !important;
+    height: 50vh;
+}
+
+.Products .Product .Product-img a{
+    position: absolute;
+    left:0;
+    bottom:-100%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #f81f1f;
+    font-family:"Josefin Sans",sans-serif; 
+    transition: bottom .7s;
+  
+    
+}
+.Products .Product .Product-img:hover a{
+   bottom: 1%;
+}
+.Products .Product .caption a{
+    display: inline-block;
+}
+.Products .Product .caption p{
+    color: #444444;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+}
