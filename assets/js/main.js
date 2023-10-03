@@ -8,7 +8,7 @@ const searchInput = document.getElementById("search");
 const searchButton = document.getElementById("searchButton");
 let searchTerm;
 let currentProducts;
-
+let categories ;
 function initApp() {
 
     getAllCategories();
@@ -19,7 +19,7 @@ function initApp() {
 
 async function getAllCategories() {
     const request = await fetch('https://dummyjson.com/products/categories');
-    const categories = await request.json();
+   categories = await request.json();
     console.log(categories);
     displayCategories(categories);
 }
