@@ -36,7 +36,6 @@ function displayCategories(categories) {
     categoriesList.innerHTML = result;
 }
 
-
 async function getProductsOfCategory(index) {
     let request;
     if (index == 'All') {
